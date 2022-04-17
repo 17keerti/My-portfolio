@@ -16,7 +16,7 @@
 }
 
 .firstrow {
-  background:url("../images/");
+  background:url("../images/back.avif");
 }
 
 .detail {
@@ -71,6 +71,7 @@
 
 .detail h2 {
   /* border-bottom: 3px solid  #149ddd; */
+  color: #149ddd;
   overflow: hidden; 
   border-right: .15em solid #149ddd; 
   white-space: nowrap; 
@@ -82,7 +83,7 @@
 
 @keyframes typing {
   from { width: 0 }
-  to { width: 20% }
+  to { width: 40% }
 }
 
 @keyframes blink-caret {
