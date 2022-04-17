@@ -1,21 +1,43 @@
 #sidebar {
+  height: 100%; 
+  width: 200px; 
+  position: fixed;
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background-color: #111; 
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.main {
+  margin-left: 200px; 
+  padding: 0px 10px;
+}
+
+.firstrow {
+  background:url("../images/");
+}
+
+.detail {
   height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .footer {
   display: flex;
   flex: 1 0 auto;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  justify-content:end;
   padding: 20px;
   color: white;
-  /* background-color: green; */
 }
 
 .footer ul {
   padding: 0;
   list-style: none;
-  text-align:end;
   font-size: 20px;
   line-height: 1.6;
   margin-bottom: 0;
@@ -25,6 +47,45 @@
 .footer ul li {
   display: inline-flex;
   margin-left: 25px;
-  justify-content: end;
+
 }
 
+.display {
+  margin-top: 0.5rem;
+}
+
+#aboutme , #projects, #contactme {
+  color: #173b6c;
+  padding-right: 2px;
+  font-family: "Poppins", sans-serif;
+}
+
+#aboutme::after, #projects::after, #contactme::after {
+  content: "";
+  display: block;
+  width: 50px;
+  padding-top: 15px;
+  border-bottom: 3px solid  #149ddd;
+}
+
+
+.detail h2 {
+  /* border-bottom: 3px solid  #149ddd; */
+  overflow: hidden; 
+  border-right: .15em solid #149ddd; 
+  white-space: nowrap; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 1s steps(30, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 20% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #149ddd; }
+}
