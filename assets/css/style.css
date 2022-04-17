@@ -1,0 +1,30 @@
+#sidebar {
+  height: 100vh;
+}
+
+.footer {
+  display: flex;
+  flex: 1 0 auto;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  justify-content:end;
+  padding: 20px;
+  color: white;
+  /* background-color: green; */
+}
+
+.footer ul {
+  padding: 0;
+  list-style: none;
+  text-align:end;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+
+.footer ul li {
+  display: inline-flex;
+  margin-left: 25px;
+  justify-content: end;
+}
+
