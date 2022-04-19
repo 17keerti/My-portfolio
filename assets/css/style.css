@@ -90,3 +90,18 @@
   from, to { border-color: transparent }
   50% { border-color: #149ddd; }
 }
+
+@media (max-width: 768px) {
+  #sidebar {
+      display: none;
+  }
+  .main {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 600px){
+  .footer ul li {
+    display: block;
+  }
+}
