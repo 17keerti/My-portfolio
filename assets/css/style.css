@@ -54,13 +54,13 @@
   margin-top: 0.5rem;
 }
 
-#aboutme , #projects, #contactme {
+#aboutme , #projects, #contactme, #skills {
   color: #173b6c;
   padding-right: 2px;
   font-family: "Poppins", sans-serif;
 }
 
-#aboutme::after, #projects::after, #contactme::after {
+#aboutme::after, #projects::after, #contactme::after, #skills::after {
   content: "";
   display: block;
   width: 50px;
